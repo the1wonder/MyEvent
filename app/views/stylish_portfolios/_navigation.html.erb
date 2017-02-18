@@ -40,6 +40,7 @@
         <%if signed_in?%>
         <li><%=link_to 'log out' , destroy_user_session_path, method: :delete%></li>
         <li><%=link_to 'Edit profile' , edit_user_registration_path%></li>
+        <li><%=link_to 'Your code' , welcome_index_path%></li>
         <%else%>
           <li><%=link_to 'log in' , "/users/sign_in" %></li>
           <li><%=link_to 'sing up' , "/users/sign_up" %></li>

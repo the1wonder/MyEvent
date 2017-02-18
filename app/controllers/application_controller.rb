@@ -9,7 +9,9 @@ class ApplicationController < ActionController::Base
   # def logged_in?
   #   !!current_user
   # end
-
+  def after_sign_in_path_for(resource)
+    welcome_index_path
+  end
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :title, :company_name, :mobile,:website, :telephone, :email, :password) }
