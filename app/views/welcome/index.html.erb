@@ -2,11 +2,7 @@
     <div class="row">
         <div class="col-lg-3 col-lg-offset-3 text-center">
             <h3>Save this code</h1>
-              <% if current_user.name.nil? %>
               <%= image_tag('http://chart.apis.google.com/chart?chs=200x200&cht=qr&chl=' + current_user.name + " , " + current_user.id.to_s + " , " + current_user.email) %>
-              <%else%>
-              <%= image_tag('http://chart.apis.google.com/chart?chs=200x200&cht=qr&chl=' + current_user.name + " , " + current_user.email) %>
-              <%end%>
             </div>
           </div>
     </div>
