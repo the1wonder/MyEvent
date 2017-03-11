@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* this version without registration title and needed regstrison fildes(title, phone, combany name, etc)
+
+* try to add facebook, twitter and linkedin

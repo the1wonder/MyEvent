@@ -12,6 +12,10 @@ gem 'rails', '~> 5.0.1'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-facebook', '~> 4.0'
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+gem 'omniauth-twitter', '~> 1.4'
 
 gem 'frontend-generators'
 # Use Puma as the app server
