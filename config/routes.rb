@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" ,:registrations => 'registrations'}
+  # controllers: { registrations: 'registrations' }
   # get 'stylish_portfolios/index'
   root 'stylish_portfolios#index'
   get 'welcome/index'
